@@ -296,13 +296,8 @@ The ISC2 Certified in Cybersecurity (CC) is an entry-level certification coverin
 
 | Room | Status | Topic |
 |------|--------|-------|
-| Welcome | Completed | Platform intro |
-| Intro to Cybersecurity | Completed | Field overview |
-| Offensive Security  Intro | Completed | |
-| Defensive Security  Intro | Completed | |
 | Pre-Security | Completed | Networking, Linux, web |
-| OWASP Top 10 | Completed | Web vulnerabilities |
-| Linux Fundamentals | IN Progress | Linux for security |
+| Cybersecurity 101 | In Progress | Web vulnerabilities |
 
 ---
 
