@@ -280,6 +280,55 @@ The ISC2 Certified in Cybersecurity (CC) is an entry-level certification coverin
 - Privacy protects personal information from misuse — even by authorized parties
 - Key regulations: GDPR (Europe), NDPR (Nigeria), HIPAA (US healthcare)
 
+### Domain 2: Business Continuity, Disaster Recovery & Incident Response — Study Notes
+ 
+**Business Continuity (BC)**
+- Business continuity planning ensures critical business functions keep running during and after a disruptive event (natural disaster, cyberattack, system failure, pandemic, etc.)
+- A **Business Continuity Plan (BCP)** documents how an organization will continue operating during an incident
+- **Business Impact Analysis (BIA)**: identifies which business functions are most critical and what the impact of their loss would be over time
+- Key BIA metrics:
+  - **RTO (Recovery Time Objective)**: the maximum acceptable time a system can be down before causing unacceptable harm
+  - **RPO (Recovery Point Objective)**: the maximum acceptable amount of data loss, measured in time (e.g., "we can lose up to 1 hour of data")
+  - **MTD (Maximum Tolerable Downtime)**: the absolute limit of how long a function can be unavailable before the business suffers severe/irrecoverable damage
+**Disaster Recovery (DR)**
+- DR is a *subset* of business continuity — specifically focused on restoring IT systems and data after a disruptive event
+- A **Disaster Recovery Plan (DRP)** is the technical playbook: how to restore servers, applications, and data
+- Backup strategies:
+  - **Full backup**: complete copy of all data — slow to create, fast to restore
+  - **Incremental backup**: only changes since the last backup — fast to create, slower to restore (must apply all increments in order)
+  - **Differential backup**: changes since the last *full* backup — a middle ground
+- **3-2-1 backup rule**: keep 3 copies of data, on 2 different media types, with 1 copy stored offsite
+- DR site types:
+  - **Hot site**: fully operational duplicate environment, ready to take over almost instantly (expensive)
+  - **Warm site**: partially configured, needs some setup before becoming operational
+  - **Cold site**: basic infrastructure only (power, space) — requires significant time to become operational (cheapest)
+**Incident Response (IR)**
+- An **incident** is any event that violates security policy or threatens the confidentiality, integrity, or availability of a system
+- The Incident Response Lifecycle (commonly modeled in 6 phases):
+  1. **Preparation** — having policies, tools, and trained personnel ready *before* an incident occurs
+  2. **Detection & Analysis** — identifying that an incident has occurred and understanding its scope
+  3. **Containment** — isolating affected systems to stop the incident from spreading
+  4. **Eradication** — removing the root cause (malware, unauthorized access, vulnerability)
+  5. **Recovery** — restoring systems to normal operation and verifying they're clean
+  6. **Lessons Learned (Post-Incident Review)** — documenting what happened and improving defenses for next time
+- **Incident Response Team (IRT)**: a designated cross-functional team responsible for executing the IR plan
+- **Chain of custody**: maintaining a documented trail of how evidence was collected, handled, and stored — critical if the incident leads to legal action
+- Difference between an **event** (anything observable on a system) and an **incident** (an event that has a negative impact on confidentiality, integrity, or availability)
+**Why This Matters Together**
+- BC, DR, and IR are deeply connected: an incident (e.g., ransomware) triggers incident response, which may trigger disaster recovery (restoring from backups), all in service of business continuity (keeping the organization running)
+- A common testing approach is the **tabletop exercise**: walking through a simulated incident scenario as a team to validate that plans actually work before a real crisis happens
+**Key Insight**
+> Prevention will eventually fail — every organization will face an incident eventually. What separates organizations that survive from those that don't is whether they prepared a plan *before* they needed it.
+ 
+---
+ 
+ 
+- DAC, MAC, RBAC, ABAC — see notes in COSC222 section above
+- Physical access controls: locks, badges, biometrics, mantrap
+- Logical access controls: passwords, tokens, certificates
+- Account management lifecycle: provisioning → review → de-provisioning
+
+ ---
 ### Domain 3: Access Controls — Study Notes
 *(Strong foundation from COSC222 and internship experience)*
 - DAC, MAC, RBAC, ABAC — see notes in COSC222 section above
@@ -296,9 +345,10 @@ The ISC2 Certified in Cybersecurity (CC) is an entry-level certification coverin
 
 | Room | Status | Topic |
 |------|--------|-------|
-| Pre-Security | Completed | Networking, Linux, web |
-| Cybersecurity 101 | In Progress | Web vulnerabilities |
-
+| Offensive Security Intro | Completed | Attacker mindset, penetration testing fundamentals |
+| Defensive Security Intro | Completed | Blue team fundamentals, SOC operations, monitoring |
+ 
+*Continuing to build hands-on lab experience as time and resources allow, alongside ongoing certification study.*
 ---
 
 ## Key Takeaways So Far
