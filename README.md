@@ -1,4 +1,4 @@
-# 🔐 Cybersecurity Learning Journey
+# Cybersecurity Learning Journey
 
 > **Oluwatoni Adebajo** — Software Engineering Student, Babcock University (4.61 GPA)  
 > Documenting my transition from secure software development into cybersecurity.  
@@ -6,7 +6,7 @@
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 - [About This Repo](#about-this-repo)
 - [Cisco: Introduction to Cybersecurity](#cisco-introduction-to-cybersecurity)
 - [Academic Security Coursework](#academic-security-coursework)
